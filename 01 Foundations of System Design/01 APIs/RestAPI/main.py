@@ -12,19 +12,19 @@ app = FastAPI(
 
 # Root route
 @app.get("/")
-def read_root():
+async def read_root():
     return {"message": "Welcome to FastAPI!"}
 
 
 # Dynamic route with parameter
 @app.get("/hello/{name}")
-def say_hello(name: str):
+async def say_hello(name: str):
     return {"message": f"Hello, {name}!"}
 
 
 # Query parameters example
 @app.get("/items/")
-def read_item(item_id: int, q: str = None):
+async def read_item(item_id: int, q: str = None):
     return {"item_id": item_id, "query": q}
 
 
