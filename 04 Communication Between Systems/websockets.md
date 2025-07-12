@@ -1,6 +1,6 @@
 Sequence Diagrams for HTTP Communication PatternsThis document illustrates the sequence of interactions between a client and a server for three common HTTP communication patterns: Polling, Long Polling, and WebSockets.1. PollingPolling is a technique where the client repeatedly sends requests to the server to check for new data. If there is no new data, the server responds with an empty or "no new data" message. This can be inefficient as it generates a lot of unnecessary requests.
 
-```
+```mermaid
 sequenceDiagram
     participant Client
     participant Server
