@@ -1,4 +1,7 @@
-Sequence Diagrams for HTTP Communication PatternsThis document illustrates the sequence of interactions between a client and a server for three common HTTP communication patterns: Polling, Long Polling, and WebSockets.1. PollingPolling is a technique where the client repeatedly sends requests to the server to check for new data. If there is no new data, the server responds with an empty or "no new data" message. This can be inefficient as it generates a lot of unnecessary requests.sequenceDiagram
+Sequence Diagrams for HTTP Communication PatternsThis document illustrates the sequence of interactions between a client and a server for three common HTTP communication patterns: Polling, Long Polling, and WebSockets.1. PollingPolling is a technique where the client repeatedly sends requests to the server to check for new data. If there is no new data, the server responds with an empty or "no new data" message. This can be inefficient as it generates a lot of unnecessary requests.
+
+```
+sequenceDiagram
     participant Client
     participant Server
 
@@ -10,6 +13,8 @@ Sequence Diagrams for HTTP Communication PatternsThis document illustrates the s
     Note over Client,Server: Short delay
     Client->>Server: Request 3 (e.g., "Any updates?")
     Server-->>Client: Response 3 (e.g., "No updates" or "Data C")
+```
+
 2. Long PollingLong Polling is an improvement over traditional polling. The client sends a request to the server, and if the server doesn't have new data immediately, it holds the connection open until new data becomes available or a timeout occurs. Once data is available, the server sends the response and closes the connection. The client then immediately opens a new connection. This reduces the number of requests compared to short polling.sequenceDiagram
     participant Client
     participant Server
