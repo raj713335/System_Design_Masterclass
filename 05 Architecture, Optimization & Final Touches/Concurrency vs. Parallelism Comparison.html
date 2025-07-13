@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurrency vs. Parallelism</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-6 md:p-8 rounded-lg shadow-xl max-w-4xl w-full">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-6 md:mb-8">
+            Concurrency vs. Parallelism
+        </h1>
+
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <thead class="bg-gradient-to-r from-green-400 to-blue-500 text-white">
+                    <tr>
+                        <th class="py-3 px-4 text-left text-sm md:text-base font-semibold rounded-tl-lg">Aspect</th>
+                        <th class="py-3 px-4 text-left text-sm md:text-base font-semibold">Concurrency</th>
+                        <th class="py-3 px-4 text-left text-sm md:text-base font-semibold rounded-tr-lg">Parallelism</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Definition -->
+                    <tr class="border-b border-gray-200 hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700 font-medium text-sm md:text-base">Definition</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Dealing with multiple tasks by interleaving their execution. Tasks may overlap but may not run simultaneously.</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Executing multiple tasks at the same time on separate cores or processors.</td>
+                    </tr>
+                    <!-- Execution -->
+                    <tr class="border-b border-gray-200 hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700 font-medium text-sm md:text-base">Execution</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Achieved through context switching on a single core or thread.</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Requires multiple cores or processors to execute tasks simultaneously.</td>
+                    </tr>
+                    <!-- Focus -->
+                    <tr class="border-b border-gray-200 hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700 font-medium text-sm md:text-base">Focus</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Managing multiple tasks and maximizing resource utilization.</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Splitting a single task into smaller sub-tasks for simultaneous execution.</td>
+                    </tr>
+                    <!-- Use Case -->
+                    <tr class="border-b border-gray-200 hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700 font-medium text-sm md:text-base">Use Case</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Best suited for I/O-bound tasks like handling multiple network requests or file operations.</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Ideal for CPU-bound tasks like data processing or machine learning training.</td>
+                    </tr>
+                    <!-- Resource Requirement -->
+                    <tr class="border-b border-gray-200 hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700 font-medium text-sm md:text-base">Resource Requirement</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Can be implemented on a single core or thread.</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Requires multiple cores or threads.</td>
+                    </tr>
+                    <!-- Outcome -->
+                    <tr class="border-b border-gray-200 hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700 font-medium text-sm md:text-base">Outcome</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Improves responsiveness by efficiently managing task switching.</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Reduces overall execution time by performing tasks simultaneously.</td>
+                    </tr>
+                    <!-- Examples -->
+                    <tr class="border-b border-gray-200 hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700 font-medium text-sm md:text-base">Examples</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Asynchronous APIs, chat applications, or web servers handling multiple requests.</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">Video rendering, machine learning training, or scientific simulations.</td>
+                    </tr>
+                    <!-- Analogy -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="py-3 px-4 text-gray-700 font-medium text-sm md:text-base rounded-bl-lg">Analogy</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base">A single chef multitasking—preparing multiple dishes by working on them in parts.</td>
+                        <td class="py-3 px-4 text-gray-600 text-sm md:text-base rounded-br-lg">Multiple chefs working on different dishes at the same time.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
