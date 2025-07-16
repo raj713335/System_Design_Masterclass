@@ -1,7 +1,7 @@
 # System Design Masterclass
 
 <div align="center">
-  <img src="Data/system_design_masterclass.png" alt="System Design Masterclass" width="400"/>
+  <img src="Data/system_design_masterclass.png" alt="System Design Masterclass" />
 </div>
 
 ## Overview
