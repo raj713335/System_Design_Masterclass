@@ -8,7 +8,7 @@
 
 A comprehensive collection of system design concepts, algorithms, and practical implementations covering the fundamental building blocks of scalable distributed systems. This repository serves as a complete learning resource for understanding system design principles through hands-on examples and theoretical concepts.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ### 01 Foundations of System Design
 - **APIs**: REST, GraphQL, and gRPC implementations
@@ -44,7 +44,7 @@ A comprehensive collection of system design concepts, algorithms, and practical 
 - **Concurrency vs. Parallelism**: Interactive comparison
   - `Concurrency vs. Parallelism Comparison.html` - Visual comparison with examples
 
-## 🎯 Key Learning Areas
+## Key Learning Areas
 
 ### API Design & Implementation
 - **REST APIs**: Modern FastAPI-based RESTful services
@@ -68,7 +68,7 @@ A comprehensive collection of system design concepts, algorithms, and practical 
 - **Caching Strategies**: Various caching approaches
 - **Database Scaling**: Sharding and distribution techniques
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.7+
@@ -149,7 +149,7 @@ cd "04 Communication Between Systems/22 Bloom Filters"
 python "22 Bloom Filters.py"
 ```
 
-## 📊 Visual Resources
+## Visual Resources
 
 The project includes comprehensive visual aids in the `Data/` directory:
 
@@ -168,7 +168,7 @@ The project includes comprehensive visual aids in the `Data/` directory:
 - Interactive HTML comparisons
 - Detailed diagrams in Draw.io format
 
-## 🧠 Learning Path
+## Learning Path
 
 ### Beginner Level
 1. Start with REST API fundamentals
@@ -188,7 +188,7 @@ The project includes comprehensive visual aids in the `Data/` directory:
 3. Analyze concurrency vs. parallelism
 4. Design fault-tolerant architectures
 
-## 🔧 Customization
+## Customization
 
 ### Adding New Algorithms
 1. Create a new Python file in the appropriate directory
@@ -201,7 +201,7 @@ The project includes comprehensive visual aids in the `Data/` directory:
 - Add new test cases and edge conditions
 - Implement additional algorithms following the same patterns
 
-## 📝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -209,11 +209,11 @@ The project includes comprehensive visual aids in the `Data/` directory:
 4. Include proper documentation
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the GNU Lesser General Public License v2.1 - see the [LICENSE](LICENSE) file for details.
 
-## 🎓 Educational Value
+## Educational Value
 
 This masterclass provides:
 - **Practical implementations** of theoretical concepts
@@ -229,7 +229,7 @@ This masterclass provides:
 - [gRPC Documentation](https://grpc.io/docs/)
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
 
-## 📞 Support
+## Support
 
 For questions, issues, or contributions, please:
 1. Check existing documentation
@@ -239,6 +239,6 @@ For questions, issues, or contributions, please:
 
 ---
 
-**Happy Learning! 🚀**
+## Happy Learning! 
 
 *Master the art of designing scalable, reliable, and efficient distributed systems.*
