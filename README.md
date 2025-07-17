@@ -78,7 +78,7 @@ A comprehensive collection of system design concepts, algorithms, and practical 
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/raj713335/System_Design_Masterclass.git
    cd System_Design_Masterclass
    ```
 
