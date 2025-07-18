@@ -239,6 +239,6 @@ For questions, issues, or contributions, please:
 
 ---
 
-## Happy Learning! 
+# Happy Learning! 
 
 *Master the art of designing scalable, reliable, and efficient distributed systems.*
