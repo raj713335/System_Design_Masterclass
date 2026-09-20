@@ -1,4 +1,12 @@
-<h1 align="center"><a href="https://www.udemy.com/course/system-design-using-python/?referralCode=874EF840DCABCDE80E29"> System Design Masterclass </a></h1>
+<h1 align="center">
+  <a href="https://www.udemy.com/course/system-design-using-python/?referralCode=874EF840DCABCDE80E29"> 
+    System Design Masterclass 
+  </a>
+</h1>
+
+<p align="center">
+  Learn to design scalable, distributed, and high-performance systems with real-world examples and interview prep.
+</p>
 
 <div align="center">
   <img src="Data/system_design_masterclass.png" alt="System Design Masterclass" />
